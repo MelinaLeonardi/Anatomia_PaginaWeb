@@ -60,7 +60,7 @@ background-color: #ebebeb;
 .burger-menu{
     background-color: blue;
     
-    display:inline;
+    display:inline-block;
     margin:50%;
     padding: 5px;
     border-radius: 20%;
