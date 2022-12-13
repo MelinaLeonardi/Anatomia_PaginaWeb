@@ -1,0 +1,98 @@
+#page_header{
+    background-color:  #EAC926;
+    padding: 30px;
+
+}
+#main_principal{
+    width: 90%;
+    margin-top: 10px;
+     margin: 0 auto
+}
+.fa-truck{
+    color:#39b54a;;
+}
+@media(min-width:481px){
+    /tablet
+}
+
+@media (min-width:769px){
+
+}
+
+.product-shadow{
+    box-shadow:none
+
+}
+
+
+#page_body{
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+
+}
+#descuento{
+    color:#39b54a;;
+}
+p{
+    font-size: 12px;
+}
+#secciones{
+    font-size: 24px;
+}
+h4, #descuento{
+    font-size: 16px;
+}
+article{
+    margin: 10px;
+border-top: 1px; 
+list-style:solid; 
+background-color: #ebebeb;   
+}
+
+.imagenes_producto{
+    width: 100%;
+}
+#precio{
+    font-size: 18px;
+}
+
+.burger-menu{
+    background-color: blue;
+    
+    display:inline;
+    margin:50%;
+    padding: 5px;
+    border-radius: 20%;
+
+}
+    
+#Buscador{
+    /* tengo que posicionar el text box de la barra de busqueda*/
+  background-position: top right; 
+}
+
+
+#footer_page{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+/* color icono paga con tarjeta...*/
+.fa-credit-card {
+color:blue;
+}
+
+/* color icono envio gratis...*/
+.fa-gift{
+color:blue;
+}
+/*color icono seguridad, de principio a fin*/
+.fa-user-shield{
+    color:blue;
+}
+
+#banner{
+    width:100%;
+}
