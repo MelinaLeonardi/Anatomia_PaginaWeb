@@ -61,16 +61,19 @@
     </header>
 <main>
     <!--formulario de login-->
-    <form>
-        <div  class="flex flex-column justify-x justify-y my-1 ">
-            <input class="my-1" type ="text" name= "usuario" id="usuario"placeholder="Nombre de usuario">
-            <input class="my-1" type ="text" name="contraseña" id="contraseña" placeholder="Elegi tu contraseña">
-             <button class="my-1" type="submit">Enviar</button>
+    <form action="/" method="POST" class="flex flex-column justify-x  my-1 mx-auto w-50 text-center gap font-m ">
+        <div  class="flex-wrap">
+            <label class="my-1 b-none" for="nombreusuario"> Nombre de usuario: </label>
+            <input class="my-1 b-none" type ="text" name= "nombreusuario" id="nombreusuario"">
         </div>
 
+        <div class="flex-wrap">
+            <label class="my-1 b-none" for="contraseña"> Ingrese contraseña: </label>
+            <input class="my-1 b-none" type ="password" name="contraseña" id="contraseña"">
+            
+        </div>
 
-
-
+        <button class="my-1" type="submit">Enviar</button>
 
     </form>
 
