@@ -258,7 +258,11 @@ align-items: center;
 .hide {
     display: block;
 }
+.footer-desk {
+    display: flex;
+    flex-direction: row;
 
+}
 }
 
 
