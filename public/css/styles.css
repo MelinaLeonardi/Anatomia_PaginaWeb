@@ -1,98 +1,269 @@
-#page_header{
-    background-color:  #EAC926;
-    padding: 30px;
+/*ESTILOS DE PABLO BALEZTENA COPIADOS Y MODIFICADOS PARA IMPLEMENTAR METODOLOGIA DE TRABAJO*/
 
-}
-#main_principal{
-    width: 90%;
-    margin-top: 10px;
-     margin: 0 auto
-}
-.fa-truck{
-    color:#39b54a;;
-}
-@media(min-width:481px){
-    /tablet
+
+/*fuente de letra en todo el body*/
+body {
+    font-family: "Roboto";
 }
 
-@media (min-width:769px){
+/*colores de fondos*/
 
+.bg-yellow {
+    background-color: #eac926;
 }
 
-.product-shadow{
-    box-shadow:none
-
+.bg-dark-grey {
+    background-color: #666;
 }
 
-
-#page_body{
+.bg-grey {
     background-color: #ebebeb;
-    font-family: 'Roboto', sans-serif;
-    margin: 10px;
+}
 
+.bg-blue {
+    background-color: #1259c3;
 }
-#descuento{
-    color:#39b54a;;
+
+.bg-white {
+    background-color: white;
 }
-p{
+
+/* colores de fuente*/
+
+.color-green {
+    color: #39b54a;
+}
+.color-white {
+    color: white;
+}
+
+.color-blue {
+    color: blue;
+}
+
+/*tamaños de fuente*/
+.font-em{
+    font-size: 2em;;
+}
+.font-m {
     font-size: 12px;
 }
-#secciones{
-    font-size: 24px;
-}
-h4, #descuento{
+
+.font-lg {
     font-size: 16px;
 }
-article{
-    margin: 10px;
-border-top: 1px; 
-list-style:solid; 
-background-color: #ebebeb;   
-}
 
-.imagenes_producto{
-    width: 100%;
-}
-#precio{
+.font-xl {
     font-size: 18px;
 }
 
-.burger-menu{
-    background-color: blue;
-    
-    display:inline-block;
-    margin:50%;
-    padding: 5px;
-    border-radius: 20%;
-
-}
-    
-#Buscador{
-    /* tengo que posicionar el text box de la barra de busqueda*/
-  background-position: top right; 
+.title {
+    font-size: 24px;
 }
 
+/*estilo de barra de navegacion*/
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+.hide {
+    display: none;
+}
 
-#footer_page{
+/*configuracion del ancho( width)*/
+.w-50 {
+    width: 50%;
+}
+
+.vw-90 {
+    width: 90vw;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/*estilos de borde*/
+.b-1 {
+    border-style: solid;
+}
+
+.bt-1 {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.b-none {
+    border: none;
+}
+
+.border-grey {
+    border-color: #ebebeb;
+}
+
+/*estilos de fuente*/
+.bold {
+    font-weight: bold;
+}
+
+
+
+/*configuracion del texto o contenido de contenedores*/
+.text-center {
     text-align: center;
-    background-color: white;
+}
+.justify-x{
+    justify-content: center;
+}
+.justify-y{
+align-items: center;
+}
+
+/*estilo del contenedor*/
+.round {
+    border-radius: 50%;
+}
+
+.radius-1 {
+    border-radius: 5px;
+}
+.relative {
+    position: relative;
+}
+
+                /*LA PROPIEDAD CSS OUTLINE ES UNA FORMA REDUCIDA PARA ESTABLECER UNA O MÁS DE LAS PROPIEDADES INDIVIDUALES DE CONTORNO OUTLINE-STYLE,
+                                    OUTLINE-WIDTH Y OUTLINE-COLOR EN UNA SOLA DECLARACIÓN.*/
+
+.outline-none {
+    outline: none;
+}
+
+                /*PRODUCT SHADOW*/
+
+  .product-shadow {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+/*paddins o rellenos de contenedores*/
+.p-1 {
+    padding: 8px;
+}
+
+.p-2 {
     padding: 20px;
 }
 
-/* color icono paga con tarjeta...*/
-.fa-credit-card {
-color:blue;
+.py-1 {
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-/* color icono envio gratis...*/
-.fa-gift{
-color:blue;
+/*margenes*/
+.my-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-/*color icono seguridad, de principio a fin*/
-.fa-user-shield{
-    color:blue;
+.my-2{
+    margin-botton:10px;
 }
 
-#banner{
-    width:100%;
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mr-1 {
+    margin-right: 8px;
+}
+
+/*disposicion del contenedor flex y sus elementos hijos(flex items)*/
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+
+.gap {
+    gap: 10px;
+}
+
+.align-center {
+    align-self: center;
+}
+               
+
+
+
+/*estilos del camioncito de envio*/
+.truck-icon {
+    color: green;
+    border: green solid 1px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    right: 15px;
+    top: -15px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 481px) {
+
+    /* tablet */
+    .md-w-50 {
+        width: 48%;
+    }
+}
+
+@media (min-width: 769px) {
+
+    /* laptop */
+    .lg-w-25 {
+        width: 23%;
+    }
+
+    .product-shadow {
+        box-shadow: none;
+    }
+
+    .description {
+        display: none;
+    }
+.product:hover .description {
+    display: block;
+  
+}
+.product:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.transition:hover  {
+    transform: rotate(-360deg);
+    transition-duration: 1000ms;
+}
+/*hago aparecer la barra de navegacion y oculto el menu hamburguesa*/
+.fa-bars {
+    display: none;
+}
+
+.hide {
+    display: block;
+}
+
+}
+
+
+
+@media (min-width: 1281px) {
+    /* desktop */
+
 }
