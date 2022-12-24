@@ -17,11 +17,11 @@
 </head>
 
 <body class="bg-grey">
-    <header class="bg-yellow p-1 flex flex-wrap">
-        <h1 class="w-50">
+    <header class="bg-yellow p-1 flex flex-wrap justify-x">
+        <h1 class="w-50  ms-w30">
             <img src="/img/logo-mercado-liebre.svg" alt="Mercado Liebre" />
         </h1>
-        <div class="w-50 ">
+        <div class="w-50  ms-w30 ">
             <form action="/" class="p-1 flex radius-1 bg-white ">
                 <input class="flex-grow b-none outline-none font-lg" type="text" name="search"
                     placeholder="Buscá productos por nombre, marcas o palabras clave" />
@@ -30,18 +30,18 @@
                 </button>
             </form>
         </div>
-        <p class="text-center w-100 my-1">
+        <p class="text-center w-100 my-1  ms-w30">
             <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
             tarjeta de crédito
         </p>
         <nav class="hide">
-            <ul class="py-1">
+            <ul class="py-1  flex list1-desk">
                 <li><a class="nav-link" href="#">Ofertas</a></li>
                 <li><a class="nav-link" href="#">Tiendas Oficiales</a></li>
                 <li><a class="nav-link" href="#">Vender</a></li>
                 <li><a class="nav-link" href="#">Ayuda</a></li>
             </ul>
-            <ul class="py-1">
+            <ul class="py-1 flex list2-desk">
 
                 <li>
                     <a class="nav-link" href="/register">Crea tu cuenta <i class="fa-solid fa-address-card"></i></a>
@@ -59,9 +59,10 @@
             <i class="fa-solid fa-bars p-1 bg-blue radius-1 color-white bold"></i>
         </div>
     </header>
+    <img class="w-100" src="/img/img-home-banner.jpg" alt="Promoción fiestas" />
 <main>
     <!--formulario de login-->
-    <form action="/" method="POST" class="flex flex-column justify-x  my-1 mx-auto w-50 text-center gap font-m ">
+    <form action="/login" method="POST" class="flex flex-column justify-x  my-1 mx-auto w-50 text-center gap font-m ">
         <div  class="flex-wrap">
             <label class="my-1 b-none" for="nombreusuario"> Nombre de usuario: </label>
             <input class="my-1 b-none" type ="text" name= "nombreusuario" id="nombreusuario"">

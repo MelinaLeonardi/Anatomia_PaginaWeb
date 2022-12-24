@@ -115,6 +115,8 @@ body {
 .justify-x{
     justify-content: center;
 }
+
+
 .justify-y{
 align-items: center;
 }
@@ -137,6 +139,7 @@ align-items: center;
 .outline-none {
     outline: none;
 }
+
 
                 /*PRODUCT SHADOW*/
 
@@ -163,8 +166,10 @@ align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/*margen superior del footer para mandar abajo el mismo y separarlo del main*/
 .my-2{
-    margin-botton:10px;
+    margin-top: 450px;
 }
 
 .mx-auto {
@@ -182,7 +187,7 @@ align-items: center;
 }
 
 .flex-wrap {
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 .flex-column{
     flex-direction: column;
@@ -256,8 +261,28 @@ align-items: center;
 }
 
 .hide {
-    display: block;
+    display: flex;
+    
 }
+/*pongo el logo de mercado liebre, la barra de busqueda y compra en cuotas y sin tarjeta de credito junto al icono en una misma linea*/
+.ms-w30{
+    width:30%;
+}
+.list1-desk{
+  
+
+    flex-direction: row;
+ 
+}
+.list2-desk{
+
+    flex-direction: row;
+  
+}
+
+ 
+
+
 .footer-desk {
     display: flex;
     flex-direction: row;
