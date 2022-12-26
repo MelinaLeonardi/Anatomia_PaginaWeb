@@ -246,6 +246,23 @@ color: #eac926;
 
     color: #eac926;
 }
+/*animacion de logo de mercado liebre*/
+@keyframes aumentar {
+    0%{
+        transform:scale(0.5);
+    }
+   
+    100%{
+        transform: scale(1);
+    }
+}
+.logo{
+   animation-name: aumentar;
+   animation-duration: 1000ms;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+
+}
 
 
 /*MEDIA QUERIES*/
