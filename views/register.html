@@ -61,7 +61,7 @@
  
     <main>
         <!--aca va el register-->
-        <form action="/register" method="POST" class="p-2" >
+        <form action="/registrar-usuario" method="POST" class="p-2" >
             <div class= "flex flex-column  gap mp-1">
                 <h3 class="bold"> DATOS PERSONALES</h3>
                
@@ -92,12 +92,26 @@
                             <label for="domicilio"> Domicilio: </label>
                             <input class="b-none" type="text" name="domicilio" id="domicilio">
                         </div>
-               
+
+                        <div>
+                            <label for ="comentario">Observaciones o Comentarios</label>
+                            <textarea name="comentario"id="comentario">Escriba aqui su comentario</textarea>
+                        </div>
+                    <div>
+                        <label>Seleccione su nacionalidad</label>
+                        <select name="nacionalidad">
+                            <option value="argentino">Argentino</option>
+                            <option value="clileno">Chileno</option>
+                            <option value="boliviano">Boliviano</option>
+                            <option value="paraguayo">Paraguayo</option>
+                        </select>
+                    </div>
              
                     <div >
                         <label class="bold"> Perfil de Usuario: </label> 
                         <br>
                         <br>
+
                         <label for ="comprador">
                        <input type="radio" name="perfil" value="comprador">Comprador</label>
 
@@ -106,10 +120,11 @@
                     </div>
                
              
-                    <div >
+                    <div class="flex flex-column ">
                         <label class="bold"> Categoria de Interes: </label>
                         <br>
                         <br>
+
                         <label for="electro"> 
                              <input type="checkbox" name="categoriainteres" value="electro">Electro
                         </label>
@@ -147,15 +162,16 @@
 
              
                     <div>
-                        <label for="password"> Confirmar Contraseña </label>
-                        <input class="b-none" type="password" name="contraseña" id="password">
+                        <label for="passwordconfirm"> Confirmar Contraseña </label>
+                        <input class="b-none" type="password" name="passwordconfirm" id="passwordconfirm">
                     </div>
                     
                     <div>
-                            <button type="submit"> Enviar </button>
-                                      
-                                        
-                             <button type="reset"> Borrar </button>
+                                                               
+                                         
+                             <button class="boton-enviar mx-auto p-1 text-center radius-1 my-1" type="reset" name="borrar"> Borrar </button>
+
+                        <button class="boton-enviar mx-auto p-1 text-center radius-1 my-1" type="submit">Enviar</button>
                 
                    </div>
                 

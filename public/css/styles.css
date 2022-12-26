@@ -5,7 +5,11 @@
 body {
     font-family: "Roboto";
 }
-
+header{
+    position: fixed;
+    z-index: 10;
+    top:0;
+}
 /*colores de fondos*/
 
 .bg-yellow {
@@ -218,6 +222,30 @@ align-items: center;
     top: -15px;
 }
 
+/*trancision de botones HOVERS*/
+/*boton enviar de formulario*/
+
+.boton-enviar:hover{
+    background-color: #0022AA;
+    border-style:  none;
+    color:white;
+    font-weight: bold;
+    transition-duration: 800ms;
+}
+/*iconos del footer*/
+.fa-credit-card:hover{
+
+color: #eac926;
+
+}
+.fa-gift:hover{
+
+    color: #eac926;
+}
+.fa-user-shield:hover{
+
+    color: #eac926;
+}
 
 
 /*MEDIA QUERIES*/
@@ -262,23 +290,18 @@ align-items: center;
 
 .hide {
     display: flex;
-    
+    justify-content: space-between;
+    width:100%;
+   
+}
+.hide li{
+    margin:5px
 }
 /*pongo el logo de mercado liebre, la barra de busqueda y compra en cuotas y sin tarjeta de credito junto al icono en una misma linea*/
 .ms-w30{
     width:30%;
 }
-.list1-desk{
-  
 
-    flex-direction: row;
- 
-}
-.list2-desk{
-
-    flex-direction: row;
-  
-}
 
  
 
@@ -288,11 +311,15 @@ align-items: center;
     flex-direction: row;
 
 }
+
 }
 
 
 
-@media (min-width: 1281px) {
+@media (min-width: 1200px) {
     /* desktop */
-
+header{
+    max-width: 1200px;
+    margin:auto;
+}
 }
