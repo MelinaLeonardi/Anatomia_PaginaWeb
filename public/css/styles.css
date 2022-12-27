@@ -246,6 +246,9 @@ color: #eac926;
 
     color: #eac926;
 }
+.banner{
+        margin-top: 130px;
+}
 /*animacion de logo de mercado liebre*/
 @keyframes aumentar {
     0%{

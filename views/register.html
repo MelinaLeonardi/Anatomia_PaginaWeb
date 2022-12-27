@@ -57,7 +57,7 @@
             <i class="fa-solid fa-bars p-1 bg-blue radius-1 color-white bold"></i>
         </div>
     </header>
-    <img class="w-100" src="/img/img-home-banner.jpg" alt="Promoción fiestas" />
+    <img class="w-100 banner" src="/img/img-home-banner.jpg" alt="Promoción fiestas" />
  
     <main>
         <!--aca va el register-->
@@ -67,30 +67,30 @@
                
                     <div >
                         <label for="nombreyapellido"> Nombre y Apellido: </label>
-                        <input class="b-none" type="text" name="nombre" id="nombreyapellido">
+                        <input class="b-none" type="text" name="nombre" id="nombreyapellido" required>
                     </div>
                
                
                     <div >
                         <label for="nombre-usuario"> Nombre de Usuario </label>
-                        <input class="b-none"type="text" name="nombre-usuario" id="nombre-usuario">
+                        <input class="b-none"type="text" name="nombre-usuario" id="nombre-usuario" required>
                     </div>
                
                
                     <div >
                         <label for= "email"> E-mail </label>
-                        <input class="b-none" type="email" name="email" id="email">
+                        <input class="b-none" type="email" name="email" id="email" required>
                     </div>
                
                
                     <div >
                         <label for="fechanac"> Fecha de Nacimiento: </label>
-                        <input class="b-none" type="date" name="fechanac" id="fechanac">
+                        <input class="b-none" type="date" name="fechanac" id="fechanac" required>
                     </div>
                 
                         <div >
                             <label for="domicilio"> Domicilio: </label>
-                            <input class="b-none" type="text" name="domicilio" id="domicilio">
+                            <input class="b-none" type="text" name="domicilio" id="domicilio" required>
                         </div>
 
                         <div>
@@ -99,7 +99,7 @@
                         </div>
                     <div>
                         <label>Seleccione su nacionalidad</label>
-                        <select name="nacionalidad">
+                        <select name="nacionalidad" required>
                             <option value="argentino">Argentino</option>
                             <option value="clileno">Chileno</option>
                             <option value="boliviano">Boliviano</option>
@@ -112,7 +112,7 @@
                         <br>
                         <br>
 
-                        <label for ="comprador">
+                        <label for ="perfil" required >
                        <input type="radio" name="perfil" value="comprador">Comprador</label>
 
                         <label for="vendedor">
@@ -157,13 +157,13 @@
              
                     <div>
                         <label for="password"> Contraseña </label>
-                        <input class="b-none" type="password" name="contraseña" id="password">
+                        <input class="b-none" type="password" name="contraseña" id="password" required>
                     </div>
 
              
                     <div>
                         <label for="passwordconfirm"> Confirmar Contraseña </label>
-                        <input class="b-none" type="password" name="passwordconfirm" id="passwordconfirm">
+                        <input class="b-none" type="password" name="passwordconfirm" id="passwordconfirm" required>
                     </div>
                     
                     <div>
