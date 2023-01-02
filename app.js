@@ -1,10 +1,17 @@
 const express=require ('express');
 const app= express ();
 const path =  require ('path');
-app.listen (3000,()=>{
-    console.log('El servidor prendio');
-})
+
+
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Se prendió en el puerto ${PORT}`);
+});
+
+
 const rutaAPublic =path.join (__dirname, "public")
+
+
 const static =express.static (rutaAPublic);
 app.use(static);
 console.log (__dirname);
