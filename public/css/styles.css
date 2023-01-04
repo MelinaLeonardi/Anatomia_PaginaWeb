@@ -232,6 +232,7 @@ align-items: center;
     font-weight: bold;
     transition-duration: 800ms;
 }
+
 /*iconos del footer*/
 .fa-credit-card:hover{
 
@@ -338,7 +339,7 @@ color: #eac926;
 
 @media (min-width: 1200px) {
     /* desktop */
-header{
+body{
     max-width: 1200px;
     margin:auto;
 }
