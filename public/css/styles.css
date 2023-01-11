@@ -222,7 +222,6 @@ align-items: center;
     top: -15px;
 }
 
-/*trancision de botones HOVERS*/
 /*boton enviar de formulario*/
 
 .boton-enviar:hover{
@@ -283,6 +282,7 @@ color: #eac926;
 .product:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+/*trancision de botones camion envio HOVERS*/
 .transition:hover  {
     transform: rotate(-360deg);
     transition-duration: 1000ms;
