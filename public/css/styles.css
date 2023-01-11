@@ -5,11 +5,7 @@
 body {
     font-family: "Roboto";
 }
-header{
-    position: fixed;
-    z-index: 10;
-    top:0;
-}
+
 /*colores de fondos*/
 
 .bg-yellow {
@@ -246,9 +242,7 @@ color: #eac926;
 
     color: #eac926;
 }
-.banner{
-        margin-top: 130px;
-}
+
 
 
 /*MEDIA QUERIES*/
