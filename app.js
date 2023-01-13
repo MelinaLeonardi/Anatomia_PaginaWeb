@@ -8,12 +8,11 @@ app.listen(PORT, () => {
   console.log(`Se prendió en el puerto ${PORT}`);
 });
 
-
+//LE INDICO AL SERVIDOR DONDE ESTA LA CARPETA DE ARCHIVOS PUBLICOS>/PUBLIC
 const rutaAPublic =path.join (__dirname, "public")
-
-
-const static =express.static (rutaAPublic);
+const static =express.static (rutaAPublic);   //estas 3 lineas juntas es lo mismo que: app.use(express.static(path.join(__dirname, "../public")));>>
 app.use(static);
+
 console.log (__dirname);
 console.log (rutaAPublic);
 
